@@ -1,0 +1,188 @@
+{
+  "info": {
+    "_postman_id": "d1a17eac-6cf6-43bd-ab6b-9e4308ab090d",
+    "name": "Research Opportunity API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58921331"
+  },
+  "item": [
+    {
+      "name": "Get All Opportunities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"AI Research Project\",\r\n  \"description\": \"Research on machine learning\",\r\n  \"research_area\": \"Artificial Intelligence\",\r\n  \"faculty_name\": \"Dr. Ahmad\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, ML\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-11-30\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Opportunity",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\r\n     \"title\": \"AI Research Project\",\r\n     \"description\": \"Research on machine learning\",\r\n     \"research_area\": \"Artificial Intelligence\",\r\n     \"faculty_name\": \"Dr. Ahmad\",\r\n     \"department\": \"Computer Science\",\r\n     \"required_skills\": \"Python, ML\",\r\n     \"available_positions\": 3,\r\n     \"application_deadline\": \"2026-11-30\",\r\n     \"status\": \"Open\"\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get One Opportunity",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities/999",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Opportunity updated",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\r\n     \"title\": \"AI Research Project (Updated)\",\r\n     \"description\": \"Research on machine learning\",\r\n     \"research_area\": \"Artificial Intelligence\",\r\n     \"faculty_name\": \"Dr. Ahmad\",\r\n     \"department\": \"Computer Science\",\r\n     \"required_skills\": \"Python, ML\",\r\n     \"available_positions\": 5,\r\n     \"application_deadline\": \"2026-11-30\",\r\n     \"status\": \"Open\"\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Opportunity",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Invalid Opportunity",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\r\n     \"title\": \"\",\r\n     \"description\": \"Test\",\r\n     \"research_area\": \"AI\",\r\n     \"faculty_name\": \"Dr. Ahmad\",\r\n     \"department\": \"Computer Science\",\r\n     \"required_skills\": \"Python\",\r\n     \"available_positions\": -2,\r\n     \"application_deadline\": \"2026-11-30\",\r\n     \"status\": \"Open\"\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
