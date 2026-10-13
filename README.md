@@ -1,5 +1,5 @@
 # University Research Opportunity Portal
-
+GitHub Repository: https://github.com/Muhammadbilal727/ResearchOpportunityPortal
 A web app where faculty manage research opportunities and students can browse them.
 Built for Computer Networks (CN), Fall 2026.
 
