@@ -67,3 +67,6 @@ Import `Backend/postman_collection.json` into Postman to test all endpoints.
 
 ## Author
 MUHAMMAD BILAL, 24P-0749
+
+## Demonstration Video
+[Click here to watch the  demonstration video](https://drive.google.com/file/d/1D0D0-MXhukIlW1tJfF9i-lL7JrhS7yoo/view?usp=sharing)
